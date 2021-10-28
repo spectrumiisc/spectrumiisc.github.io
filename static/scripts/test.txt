@@ -1,0 +1,161 @@
+<div id="container">
+  <div id="background" class="translucent"></div>
+  <div id="content"></div>
+</div>
+#container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+#background, #content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+##########ON Unload"
+<script type="text/javascript">
+    window.onbeforeunload = function(e){
+        var msg = 'Are you sure?';
+        e = e || window.event;
+
+        if(e)
+            e.returnValue = msg;
+
+        return msg;
+    }
+</script>
+
+					<div  style="position: relative;overflow: hidden; width: 100%; min-width: 200px; margin: auto; padding: 0;">
+						<div id="recen"  style="position: static; top: 0; left: 0;width: 100%; padding: 0;">
+							<p style="visibility:hidden;color:rgba(0,0,0,0)"> S1 : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>						   
+						</div>
+						<div id="recent-1"  style="position: absolute; top: 0; left: 0;width: 100%; padding: 0;">
+							<p>							
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						   
+						</div>
+						<div id="recent-2"  style="position: absolute; top: 0; left: 0;width: 100%; padding: 0;">
+							<p>							
+							S1 : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>						   
+						</div>
+					</div>
+					
+					
+					<div id="recent-1" style="left:100px;">	
+						<p> Sima Premier League</p>
+					</div>
+					<div id="recent-2" style="left:0px;visibility:hidden;">	
+						<p> Christmas Celebrations</p>
+					</div>
+					<div id="recent-3" style="left:0px;visibility:hidden;">	
+						<p> Onam Celebrations</p>
+					</div>
+					
+					<div class="cycle-slideshow" 
+						data-cycle-fx="scrollHorz" 
+						data-cycle-timeout="0"
+						data-cycle-prev="#nav_arrow_l"
+						data-cycle-next="#nav_arrow_r"
+						data-cycle-pause-on-hover="true"
+						data-cycle-slides="> div"
+						>
+						<div >
+							<p>
+							S1 : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+						<div >
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+						<div >
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+					
+					
+			<ul style="padding-top:50px;padding-bottom:20px;">
+				<li><a href="main.html">Site Map</a></li>
+				<li><a href="main.html">Contact Us</a></li>
+				<li><a href="main.html">Articles</a></li>
+				<li><a href="main.html">About Us</a></li>
+				<li><a href="main.html">Home</a> </li>	
+			</ul>
+			<ul id="sddm">
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Home</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">HTML/CSS</a>
+        <a href="#">DHTML Menu</a>
+        <a href="#">JavaScript</a>
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Download</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">ASP Server-side</a>
+        <a href="#">Pulldown navigation</a>
+        <a href="#">AJAX Drop Submenu</a>
+        <a href="#">DIV Cascading </a>
+        </div>
+    </li>
+    <li><a href="#">Order</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Contact</a></li>
+	</ul>
+	<div style="clear:both"></div>
+	
+	
+	#main_tabs ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+#main_tabs li
+{	float:right;
+	width:200px;
+	text-align:center;
+}
+#main_tabs a:hover
+{ 
+	color:#bbb;
+}
+#main_tabs a
+{
+font-size: 2em;
+font-weight: bold;
+text-decoration:none;
+color:rgba(255,255,255,1);
+}
+
