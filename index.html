@@ -2,6 +2,9 @@
 <html lang="en"><head>
 	<title>ECLIPSE 2021</title>
 	<link href="../../static/css/neuroel_style.css" rel="stylesheet" type="text/css" />
+	<script language="javascript" type="text/javascript" src="../../static/scripts/neuroel_main.js"></script>
+	<script language="javascript" type="text/javascript" src="../../static/scripts/jquery.js"></script>
+	<script src="../../static/scripts/jquery.cycle2.min.js"></script>
 </head>
 <body>
 
@@ -76,5 +79,83 @@
   </div>
  
 </div>
+
+<script type="text/javascript">
+//var nBackGrounds = 12;
+
+//LoadSlides('slides_main');
+//var RecentEvents = $('div[id^="recent-"]').hide();
+//console.log(RecentEvents);
+//LoadTeamDetails();
+var CurrentRecentEvent = -1;
+
+var team_data;
+var players  ;
+var dbstat = -1;
+
+var colors   = ["#005700","#ae0000","#630073","#837200"];
+var color_id = 0;
+
+//players = [[0,"Yeshu","Defender","Che-Che","Bio"],[1,"Nijil","Defender","Manjeri","Bio"],[2,"Doney","Goali","Sultanz","Bio"],[3,"Ambi","Defender","Manjeri","Bio"]];
+GetPlayerDataFromServer();
+var CurrentPlayer = 0;
+run(0,'');
+
+$( function(){	
+	
+
+	//LoopBackGroundImage();	
+	//SetNextRecentEvent(1);	
+});
+
+//timeRefresh();
+</script> 
+
+<script>
+// Copyright 2006-2007 javascript-array.com
+
+var timeout	= 500;
+var closetimer	= 0;
+var ddmenuitem	= 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+</script>
 
 </body></html>
