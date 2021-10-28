@@ -84,7 +84,8 @@ function processData(allText) {
             for (var j=0; j<headers.length; j++) {
                 tarr.push(data[j]);
             }
-			tarr.push(parseInt(data[1])+parseInt(data[2])+parseInt(data[3]))
+	    tarr.push(parseInt(data[1])+parseInt(data[2])+parseInt(data[3]))
+	    tarr.push(parseInt(data[1])*3+parseInt(data[2])*2+parseInt(data[3]))
             lines.push(tarr);
         }
     }
@@ -96,11 +97,11 @@ function processData(allText) {
 }
 
 function sortFunction(a, b) {
-    if (a[4] === b[4]) {
+    if (a[5] === b[5]) {
         return 0;
     }
     else {
-        return (a[4] > b[4]) ? -1 : 1;
+        return (a[5] > b[5]) ? -1 : 1;
     }
 }
 
