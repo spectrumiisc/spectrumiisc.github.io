@@ -1,0 +1,161 @@
+
+<html lang="en"><head>
+	<title>ECLIPSE 2021</title>
+	<link href="../../static/css/neuroel_style.css" rel="stylesheet" type="text/css" />
+	<script language="javascript" type="text/javascript" src="../../static/scripts/neuroel_main.js"></script>
+	<script language="javascript" type="text/javascript" src="../../static/scripts/jquery.js"></script>
+	<script src="../../static/scripts/jquery.cycle2.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+	
+  <!-- <div style="width:100%;background:#000">	   -->
+		<!-- <div id="content" style="box-shadow: 0px 1px 5px 0px #fff" >		   -->
+		  <!-- <div id="main_background"></div> -->
+		<!-- </div> -->
+  <!-- </div> -->
+
+  
+  <div id="content">
+	<div style="height:150px;">
+		<div style="width:100%;color:#f03377;padding-top:60px;font-family: Mainfont;font-size:6em;text-align: center;" >
+				ECLIPSE 2021 - Leaderboard
+		</div>
+	</div>
+	<div style="margin-top: 25px; margin-left:10px;  font-family: TextFont">	
+		<div id="team_st">
+		  <div id="team_blo	">
+			<div id="team_rank" style="font-size:280%;width:10%;height:100px;float: left;padding-right: 2%;">Rank</div>
+			<div id="team_data" style="height:105px;">
+				<div style="float:left;width: 40%;padding-left: 2%;">
+					<div style="height:100px;font-size:300%;line-height: 100px;text-align: left;"><p><b>Batch</b></p></div>
+				</div>
+				<div style="float:right;width:15%;padding-left:0px;font-family:TextFont_C;">
+					<div style="font-size:300%;margin-top:40px;text-align: center; "><p><b></b>Total</p></div>
+				</div>
+				<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">
+					<div style="font-size:300%;margin-top:40px;text-align: center; "><p>3rd</p></div>
+				</div>
+				<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">
+					<div style="font-size:300%;margin-top:40px;text-align: center; "><p>2nd</p></div>
+				</div>
+				<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">
+					<div style="font-size:300%;margin-top:40px;text-align: center; "><p>1st</p></div>
+				</div>
+			</div>
+		  </div>
+		</div>  
+	</div>
+	<div id="data_screen">		
+
+			<div id="info_scroll" style="margin-top: 15px; margin-left:10px;  font-family: TextFont">	
+				<div id="team_status">
+				  <div id="team_block">
+					<div id="team_rank" style="width:10%;height:100px;float: left;">1</div>
+					<div id="team_data" style="height:105px;">
+						<div style="float:left;width: 40%;">
+							<div style="height:100px;font-size:2.5em;line-height: 100px;text-align: left;"><p><b>Kovalam Kidilanz</b></p></div>
+						</div>
+						<div style="float:right;width:15%;padding-left:0px;font-family:TextFont_C;">
+							<div style="font-size:4em;margin-top:40px;text-align: center; "><p><b>15</b></p></div>
+						</div>
+						<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">
+							<div style="font-size:4em;margin-top:40px;text-align: center; "><p>15</p></div>
+						</div>
+						<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">
+							<div style="font-size:4em;margin-top:40px;text-align: center; "><p>15</p></div>
+						</div>
+						<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">
+							<div style="font-size:4em;margin-top:40px;text-align: center; "><p>15</p></div>
+						</div>
+					</div>
+				  </div>
+				</div>  
+			</div>
+			<div style="float: left;width:4%;overflow: hidden;"></div>
+		</div>
+	</div>
+  </div>
+ 
+</div>
+
+<script type="text/javascript">
+//var nBackGrounds = 12;
+
+//LoadSlides('slides_main');
+//var RecentEvents = $('div[id^="recent-"]').hide();
+//console.log(RecentEvents);
+//LoadTeamDetails();
+var CurrentRecentEvent = -1;
+
+var team_data;
+var players  ;
+var dbstat = -1;
+
+var colors   = ["#005700","#ae0000","#630073","#837200"];
+var color_id = 0;
+
+//players = [[0,"Yeshu","Defender","Che-Che","Bio"],[1,"Nijil","Defender","Manjeri","Bio"],[2,"Doney","Goali","Sultanz","Bio"],[3,"Ambi","Defender","Manjeri","Bio"]];
+GetPlayerDataFromServer();
+var CurrentPlayer = 0;
+run(0,'');
+
+$( function(){	
+	
+
+	//LoopBackGroundImage();	
+	//SetNextRecentEvent(1);	
+});
+
+//timeRefresh();
+</script> 
+
+<script>
+// Copyright 2006-2007 javascript-array.com
+
+var timeout	= 500;
+var closetimer	= 0;
+var ddmenuitem	= 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+</script>
+
+</body></html>
