@@ -63,7 +63,7 @@ function run(dir,bids){
 	$(document).ready(function() {
 		$.ajax({
 			type: "GET",
-			url: 'test.csv',
+			url: 'scores.csv',
 			dataType: "text",
 			success: function(data) {processData(data);}
 		 });
