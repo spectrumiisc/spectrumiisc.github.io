@@ -37,17 +37,17 @@ function SetTeamDetails(team_data){
 		
 				d = d +  '</div>';
 				
-				d = d +  '		<div style="float:right;width:15%;padding-left:0px;font-family:TextFont_C;">' ; 
-				d = d +  '			<div style="font-size:300%;margin-top:40px;text-align: center; "><p><b>{0}</b></p></div>'.format([team_data[i][4]])  ; 
+				d = d +  '		<div style="float:right;width:30%;padding-left:0px;font-family:TextFont_C;">' ; 
+				d = d +  '			<div style="font-size:300%;margin-top:40px;text-align: center; "><p><b>{0}</b></p></div>'.format([team_data[i][1]])  ; 
 				d = d +  '		</div>' ; 
-				d = d +  '		<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">' ; 
-				d = d +  '			<div style="font-size:250%;margin-top:40px;text-align: center; "><p>{0}</b></div>'.format([team_data[i][3]])  ; 
-				d = d +  '		</div>' ; 
-				d = d +  '		<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">' ; 
-				d = d +  '			<div style="font-size:250%;margin-top:40px;text-align: center; "><p>{0}</b></div>'.format([team_data[i][2]])  ; 
-				d = d +  '		</div>' ;
-				d = d +  '		<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">' ; 
-				d = d +  '			<div style="font-size:250%;margin-top:40px;text-align: center; "><p>{0}</b></div>'.format([team_data[i][1]])  ; 
+				// d = d +  '		<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">' ; 
+				// d = d +  '			<div style="font-size:250%;margin-top:40px;text-align: center; "><p>{0}</b></div>'.format([team_data[i][3]])  ; 
+				// d = d +  '		</div>' ; 
+				// d = d +  '		<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">' ; 
+				// d = d +  '			<div style="font-size:250%;margin-top:40px;text-align: center; "><p>{0}</b></div>'.format([team_data[i][2]])  ; 
+				// d = d +  '		</div>' ;
+				// d = d +  '		<div style="float:right;width:10%;padding-left:0px;font-family:TextFont_C;">' ; 
+				// d = d +  '			<div style="font-size:250%;margin-top:40px;text-align: center; "><p>{0}</b></div>'.format([team_data[i][1]])  ; 
 				d = d +  '		</div>' ;
 				d = d +  '	</div>' ; 
 				d = d +  '  </div></div>' ; 
@@ -63,7 +63,7 @@ function run(dir,bids){
 	$(document).ready(function() {
 		$.ajax({
 			type: "GET",
-			url: 'scores.csv',
+			url: 'test.csv',
 			dataType: "text",
 			success: function(data) {processData(data);}
 		 });
@@ -84,24 +84,45 @@ function processData(allText) {
             for (var j=0; j<headers.length; j++) {
                 tarr.push(data[j]);
             }
-	    tarr.push(parseInt(data[1])+parseInt(data[2])+parseInt(data[3]))
-	    tarr.push(parseInt(data[1])*3+parseInt(data[2])*2+parseInt(data[3]))
+			tarr.push(parseInt(data[1])+parseInt(data[2])+parseInt(data[3]))
             lines.push(tarr);
         }
     }
+	lines.sort(sortFunction1);
+	console.log(lines);
+	var ind = lines[0][0];
+	var team_data = [];
+	var sum = 0;
+	for (var i=0; i<lines.length;i++){
+		while (ind == lines[i][0] && i<lines.length){
+			sum += parseInt(lines[i][1]);
+			i++;
+		} 
+		team_data.push([ind,sum]);
+		ind = lines[i][0];
+		sum = parseInt(lines[i][1]);
+	}
+	team_data.push([ind,sum]);
+	team_data.sort(sortFunction2);
 
-	lines.sort(sortFunction);
-
-    console.log(lines);
-	SetTeamDetails(lines);
+    console.log(team_data);
+	SetTeamDetails(team_data);
 }
-
-function sortFunction(a, b) {
-    if (a[5] === b[5]) {
+function sortFunction1(a, b) {
+    if (a[0] === b[0]) {
         return 0;
     }
     else {
-        return (a[5] > b[5]) ? -1 : 1;
+        return (a[0] > b[0]) ? -1 : 1;
+    }
+}
+
+function sortFunction2(a, b) {
+    if (a[1] === b[1]) {
+        return 0;
+    }
+    else {
+        return (a[1] > b[1]) ? -1 : 1;
     }
 }
 
