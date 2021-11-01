@@ -150,11 +150,11 @@ Batch,points
 2019,500
 2017,300
 2018,150
-# Snooker
+# Snooker,
 2017,100
 2019,60
 2020,40
-# Tennis
+# Tennis,
 2019,100
 2019,60
 2019,40
@@ -170,7 +170,7 @@ Batch,points
 2017,100
 2017,60
 2020,40
-# Badminton Women Doubles
+# Badminton Women Doubles,
 2018,200
 2019,120
 2020,60
