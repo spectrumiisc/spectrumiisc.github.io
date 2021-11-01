@@ -79,7 +79,9 @@ function processData(allText) {
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
         if (data.length == headers.length) {
-
+		if(data[0][0]=="#"){
+			next;
+		}
             var tarr = [];
             for (var j=0; j<headers.length; j++) {
                 tarr.push(data[j]);
