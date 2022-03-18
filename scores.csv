@@ -1,9 +1,45 @@
 Department,points
-# Javelin girls,
+# Javelin women,
 MRDG,100
 DESE,60
 BSSE,20
-# Javelin boys,
+#,
+# Javelin Men,
 EE,100
 CeNSE,60
 Physics,20
+#,
+# 5k Men,
+Aerospace,100
+Civil,60,
+MRDG,20
+#,
+# 5k Women,
+UG Seniors,100
+CPDM,60
+MCB,20
+#,
+# Long Jump Men,
+UG Seniors,100
+CNS,60
+CPDM,20
+#,
+# Long Jump Women,
+CeNSE,100
+Civil,40
+# Shot Put Men,
+CeNSE,100
+UG Juniors,60
+CeNSE,10
+ECE,10
+# Shot Put Women,
+CeNSE,100
+UG Seniors,60
+CeNSE,20
+# High Jump Men,
+UG Seniors,100
+CNS,60
+EE,20
+$ High Jump Women,
+CeNSE,100
+CeNSE,60
