@@ -197,7 +197,7 @@ height: 700px;
 body{
     /* positio; */
 	/* overflow: hidden; */
-	background: #333333 url(../../static/pics/main/Eclipse\ logo.png) fixed right bottom -2vh no-repeat;
+	background: #333333 url(../../static/Spectrum-logo.png) fixed right bottom -2vh no-repeat;
 	background-size: 50vh;
 	background-blend-mode: lighten;
 }
