@@ -204,7 +204,7 @@ body{
     /* positio; */
 	/* overflow: hidden; */
 	background: #333333 url(../../static/Spectrum-logo.png) fixed center bottom 4vh no-repeat;
-	background-size: 50vh;
+	background-size: 40vw;
 	background-blend-mode: lighten;
 }
 
