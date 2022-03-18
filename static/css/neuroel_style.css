@@ -194,7 +194,7 @@ height: 700px;
 }
 
 #grad1{
-  background: -webkit-linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  background: linear-gradient(t#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
