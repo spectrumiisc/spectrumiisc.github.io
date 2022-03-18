@@ -63,7 +63,7 @@ table, table td {
 
 @font-face{ 
 	font-family: 'MainFont';
-	src: url('../../static/css/BISON-BOLD.TTF');
+	src: url('../../static/css/Movement.ttf');
 }
 @font-face{ 
 	font-family: 'TextFont';
@@ -194,7 +194,7 @@ height: 700px;
 }
 
 #grad1{
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
