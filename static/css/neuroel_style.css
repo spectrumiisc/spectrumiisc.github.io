@@ -193,6 +193,12 @@ height: 700px;
 	background-size: cover;
 }
 
+#grad1{
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 body{
     /* positio; */
