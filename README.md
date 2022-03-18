@@ -1,1 +1,1 @@
-# eclipseiiscug.github.io
+# spectrumiisc.github.io
