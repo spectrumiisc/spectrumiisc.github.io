@@ -223,7 +223,7 @@ body{
 .cmbtn {
 	
 	border-style: solid;
-	border-color: #ffcc99;
+	border-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);;
 	color: #ffcc99;
 	padding: 50px;
 	text-align: center;
