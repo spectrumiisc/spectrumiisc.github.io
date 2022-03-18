@@ -194,7 +194,7 @@ height: 700px;
 }
 
 #grad1{
-  background: linear-gradient(t#eee, #333);
+  background: linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
