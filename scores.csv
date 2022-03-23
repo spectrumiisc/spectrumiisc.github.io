@@ -26,20 +26,57 @@ CPDM,20
 #,
 # Long Jump Women,
 CeNSE,100
-Civil,40
+Civil,60
+MCB,60
+#,
 # Shot Put Men,
 CeNSE,100
 UG Juniors,60
-CeNSE,10
-ECE,10
+CeNSE,20
+ECE,20
+#,
 # Shot Put Women,
 CeNSE,100
 UG Seniors,60
 CeNSE,20
+#,
 # High Jump Men,
 UG Seniors,100
 CNS,60
 EE,20
+#,
 # High Jump Women,
 CeNSE,100
 CeNSE,60
+CES,20
+#,
+# 800 Women,
+UG Seniors,100
+UG Seniors,60
+UG Seniors,20
+#,
+# 800 Men,
+UG Seniors,100
+Physics,60
+Physics,20
+#,
+# 200 Women,
+BSSE,100
+UG Seniors,60
+Physics,20
+#,
+# 1500 Men,
+Physics,100
+Physics,60
+MBU,20
+#,
+# Cycling Men,
+UG Seniors,300
+UG Seniors,100
+CSA,50
+#,
+# Cycling Women,
+CES,300
+UG Seniors,100
+CPDM,50
+#,
