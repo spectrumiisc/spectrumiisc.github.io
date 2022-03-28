@@ -121,3 +121,53 @@ CeNSE,500
 MBU,300
 Civil,100
 #,
+# 100 Women,
+BSSE,100
+CeNSE,60
+UG Seniors,20
+#,
+# 200 Men,
+UG Seniors,100
+CPDM,60
+UG Juniors,20
+#,
+# 100 Men,
+EE,100
+UG Juniors,60
+UG Seniors,20
+#,
+# Hurdles Women,
+CeNSE,100
+CeNSE,60
+Civil,20
+#,
+# Hurdles Men,
+UG Seniors,100
+UG Seniors,60
+UG Juniors,20
+#,
+# Carrom,
+CSA,500
+MBU,300
+Aerospace,100
+#,
+# Kho Kho,
+UG Seniors,500
+CSA,300
+Mechanical,100
+#,
+# Football,
+UG Seniors,500
+Maths,300
+Physics,100
+#,
+# Table Tennis,
+Maths,500
+EE,300
+Maths,100
+#,
+# Chess,
+UG Juniors,500
+Mechanical,300
+Physics,100
+#,
