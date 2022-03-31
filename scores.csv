@@ -215,3 +215,29 @@ CeNSE,500
 Physics,300
 ECE,100
 #,
+# 4x400 Women,
+CES,400
+Physics,240
+MBU,80
+#,
+# 4x100 Men,
+UG Seniors,400
+UG Juniors,240
+Mechanical,80
+#,
+# 4x100 Women,
+CeNSE,400
+UG Seniors,400
+BSSE,80
+#,
+# 4x400 Men,
+UG Seniors,400
+EE,240
+CSA,80
+Aerospace,80
+#,
+# Volleyball Men,
+CeNSE,500
+Mechanical,300
+UG Seniors,100
+#,
