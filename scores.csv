@@ -211,8 +211,8 @@ Civil,300
 SSCU,100
 #,
 # Hockey,
-CeNSE,500
-Physics,300
+Physics,500
+CeNSE,300
 ECE,100
 #,
 # 4x400 Women,
@@ -272,6 +272,7 @@ CDS,20
 #,
 # Photography,
 UG Seniors,100
+CAOS,60
 CeNSE,20
 # Videography,
 CeNSE,100
